@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnnfi1rqa13gf"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_qp04r"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(128, 40)
+script = ExtResource("1_qp04r")
+
+[node name="GoldLabel" type="Label" parent="."]
+offset_left = 320.0
+offset_top = -32.0
+offset_right = 383.0
+offset_bottom = -9.0
+text = "Gold: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="AddGoldButton" type="Button" parent="."]
+offset_left = 784.0
+offset_top = 72.0
+offset_right = 912.0
+offset_bottom = 176.0
+text = "Add Gold"
+
+[node name="UpgradeButton" type="Button" parent="."]
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 933.0
+offset_bottom = 224.0
+text = "AI improvement 10$"
+
+[node name="GoldTimer" type="Timer" parent="."]
+
+[node name="PenaltyTimer" type="Timer" parent="."]
+
+[node name="ToggleButton" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 152.0
+offset_right = 390.0
+offset_bottom = 183.0
+scale = Vector2(1.28359, 2.05394)
+text = "Secretaria Municipal
+"
+
+[node name="AddGoldButton2" type="VBoxContainer" parent="."]
+offset_left = -32.0
+offset_top = 280.0
+offset_right = 184.0
+offset_bottom = 520.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="AddGoldButton2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Secretário Municipal"
+autowrap_mode = 3
+
+[node name="Button2" type="Button" parent="AddGoldButton2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Subsecretário"
+autowrap_mode = 3
+
+[node name="Button3" type="Button" parent="AddGoldButton2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Diretor de Departamento
+"
+autowrap_mode = 3
+
+[node name="Description" type="Label" parent="."]
+offset_left = -32.0
+offset_top = 536.0
+offset_right = 976.0
+offset_bottom = 615.0
+autowrap_mode = 3
+
+[node name="GameOverLabel" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 640.0
+offset_bottom = 120.0
+text = "GAME OVER"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="ResetButton" type="Button" parent="."]
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 360.0
+offset_bottom = 72.0
+text = "Retry?"
